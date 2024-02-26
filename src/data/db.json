@@ -1,0 +1,34 @@
+{
+  "questions": [
+    { 
+      "title": "Você seria um herói ou vilão?",
+      "id": 1, 
+      "question": "Qual super poder você escolheria?", 
+      "options": [
+        { "id": 1, "name": "Raios-laser", "alias": "A" },
+        { "id": 2, "name": "Voar", "alias": "B" },
+        { "id": 3, "name": "Explodir coisas", "alias": "A" },
+        { "id": 4, "name": "Curar", "alias": "B" },
+        { "id": 4, "name": "Soltar fogo pelas mãos", "alias": "A" }
+      ]
+    },
+    { 
+      "id": 2, 
+      "question": "Quem você salvaria primeiro?", 
+      "options": [
+        { "id": 1, "name": "Crianças", "alias": "A" },
+        { "id": 2, "name": "Idosos", "alias": "B" },
+        { "id": 3, "name": "Não saberia escolher", "alias": "A" }
+      ]
+    },
+    { 
+      "id": 3, 
+      "question": "Qual a sua maior preocupação em enfrentar outro ser?", 
+      "options": [
+        { "id": 1, "name": "Não destruir prédios", "alias": "A" },
+        { "id": 2, "name": "Socar a cara do inimigo", "alias": "B" },
+        { "id": 3, "name": "Não saberia escolher", "alias": "A" }
+      ]
+    }
+  ]
+}

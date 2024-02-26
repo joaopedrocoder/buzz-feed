@@ -1,0 +1,33 @@
+<div class="quiz-container">
+  <div *ngIf="!finished; else resultado">
+    <div class="quiz-logo">
+      <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/BuzzFeed.svg/1280px-BuzzFeed.svg.png" 
+        alt="logo do BuzzFeed"
+      >
+      <h3>{{title}}</h3>
+    </div>
+  
+    <div class="quiz-questions">
+      <h3>{{questionSelected?.question}}</h3>
+    </div>
+  
+    <div class="quiz-options">
+      <button 
+        *ngFor="let option of questionSelected?.options; trackByFn"
+        type="button" 
+        class="btn-option"
+        (click)="palyerChoose(option.alias)"
+      >
+        {{option.name}}
+      </button>
+    </div>
+  </div>
+
+  <ng-template #resultado>
+    <div class="quiz-results">
+      <h1>Seu resultado é:</h1>
+      <p>{{answerSelected | uppercase}}</p>
+    </div>
+  </ng-template>
+</div>
